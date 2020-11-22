@@ -1,0 +1,138 @@
+/* variables */
+:root{
+    --color-cyan: hsl(179, 62%, 43%);
+    --color-yellow: hsl(71, 73%, 54%);
+    --color-gray: hsl(204, 43%, 93%);
+    --color-bluegray: hsl(218, 22%, 67%);
+    --color-cyan2: #4ABEBD;
+    font-size: 16px;
+    --font-regular: 400;
+    --font-bold: 700;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: auto;
+    max-width: 1440px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--color-gray);
+}
+
+.container{
+    margin: 10% auto;
+    width: 40vw;
+    min-width: 550px;
+    height: 435px;
+    
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 6px 29px -6px var(--color-bluegray);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    overflow: hidden;
+}
+
+.container article{
+    padding: 30px;
+}
+
+h1{
+    color: var(--color-cyan);
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+
+h2{
+    color: var(--color-yellow);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    font-size: 1.08rem;
+    margin-bottom: 11px;
+}
+
+.join{
+    width: 95%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+
+}
+
+.join p{
+    color: var(--color-bluegray);
+    line-height: 1.5;
+    font-size: .9rem;
+}
+
+.prize{
+    background-color: var(--color-cyan);
+    color: var(--color-gray);
+}
+
+.why{
+    background-color: var(--color-cyan2);
+    color: var(--color-gray);
+}
+
+.why p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: hsla(203, 44%, 93%, 0.664);
+}
+
+.prize p{
+    font-size: .85rem;
+}
+
+.prize .dollar{
+    font-size: 1.8rem;
+}
+
+.prize .month{
+    font-size: .8rem;
+    margin-left: 7px;
+    line-height: 3;
+    color: hsla(203, 44%, 93%, 0.664);
+}
+
+.prize a{
+    margin: 0 auto;
+    padding: 10px 74px;
+    background-color: var(--color-yellow);
+    border-radius: 5px;
+    color: var(--color-gray);
+    text-decoration: none;
+    bottom: 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 1px 8px 20px -6px #1f8685;
+}
+
+.prize .boton{
+   margin-top: 3rem;
+}
+
+@media (max-width:550px){
+    .container{
+        height: 100%;
+        display: block;
+        min-width: 330px;
+    }
+
+    .prize a{
+        padding: 10px 90px;
+        margin-left: 15px;
+    }
+
+
+}
